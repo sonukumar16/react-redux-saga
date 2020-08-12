@@ -25,7 +25,7 @@
     But how do we choose a good middleware? Based on what criteria?
 
 # Attributes of a good redux side-effects middleware
-1. Access to the Redux store. This is helpful when we want to make some decisions based on our application’s state.
+1. *Access to the Redux store*. This is helpful when we want to make some decisions based on our application’s state.
 2.Ability to dispatch another action from within the middleware. This will allow us the flexibility to trigger other side effects that have different business logic.
 3. Ability to run side effects — obviously.
 4. Cancel side effect. Since side effects can be asynchronous, we might want to be able to cancel the asynchronous process before it ends and affects our application’s state. (for example, the user decides to cancel file uploading before it finishes uploading)
